@@ -1,4 +1,4 @@
-package com.undsf.minecraft.yggdrasil.api.domains
+package com.undsf.minecraft.yggdrasil.api.domains.requests
 
 import com.fasterxml.jackson.annotation.JsonProperty
 

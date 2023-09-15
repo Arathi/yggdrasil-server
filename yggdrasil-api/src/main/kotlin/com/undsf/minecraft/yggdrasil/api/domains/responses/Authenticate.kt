@@ -1,14 +1,18 @@
-package com.undsf.minecraft.yggdrasil.api.domains
+package com.undsf.minecraft.yggdrasil.api.domains.responses
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.annotation.JsonProperty
+import com.undsf.minecraft.yggdrasil.api.domains.Profile
+import com.undsf.minecraft.yggdrasil.api.domains.User
+import com.undsf.minecraft.yggdrasil.api.domains.jwt.Token
 
 /**
  * 登陆响应报文
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-class AuthenticateResponse(
+class Authenticate(
     /**
      * 用户信息
      *
@@ -45,4 +49,9 @@ class AuthenticateResponse(
      */
     @JsonProperty
     var selectedProfile: Profile,
-)
+) {
+    @get:JsonIgnore
+    val token: Token? get() {
+        return null
+    }
+}

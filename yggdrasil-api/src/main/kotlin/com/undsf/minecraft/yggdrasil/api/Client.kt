@@ -4,6 +4,11 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import com.undsf.minecraft.yggdrasil.api.domains.*
+import com.undsf.minecraft.yggdrasil.api.domains.requests.*
+import com.undsf.minecraft.yggdrasil.api.domains.requests.Authenticate as AuthenticateRequest
+import com.undsf.minecraft.yggdrasil.api.domains.requests.Refresh as RefreshRequest
+import com.undsf.minecraft.yggdrasil.api.domains.responses.Authenticate as AuthenticateResponse
+import com.undsf.minecraft.yggdrasil.api.domains.responses.Refresh as RefreshResponse
 import com.undsf.minecraft.yggdrasil.exceptions.YggdrasilException
 
 abstract class Client(

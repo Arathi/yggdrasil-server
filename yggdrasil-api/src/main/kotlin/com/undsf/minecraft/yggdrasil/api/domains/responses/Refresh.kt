@@ -1,12 +1,14 @@
-package com.undsf.minecraft.yggdrasil.api.domains
+package com.undsf.minecraft.yggdrasil.api.domains.responses
 
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.annotation.JsonProperty
+import com.undsf.minecraft.yggdrasil.api.domains.Profile
+import com.undsf.minecraft.yggdrasil.api.domains.User
 
 /**
  * 刷新响应报文
  */
-class RefreshResponse(
+class Refresh(
     /**
      * 新的Token，JWT
      */

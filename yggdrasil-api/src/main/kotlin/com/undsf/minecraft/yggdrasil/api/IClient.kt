@@ -1,8 +1,8 @@
 package com.undsf.minecraft.yggdrasil.api
 
-import com.undsf.minecraft.yggdrasil.api.domains.AuthenticateResponse
+import com.undsf.minecraft.yggdrasil.api.domains.responses.Authenticate
 import com.undsf.minecraft.yggdrasil.api.domains.Profile
-import com.undsf.minecraft.yggdrasil.api.domains.RefreshResponse
+import com.undsf.minecraft.yggdrasil.api.domains.responses.Refresh
 import com.undsf.minecraft.yggdrasil.exceptions.YggdrasilException
 import kotlin.jvm.Throws
 
@@ -13,7 +13,7 @@ interface IClient {
         password: String,
         clientToken: String? = null,
         requireUser: Boolean? = false
-    ): AuthenticateResponse
+    ): Authenticate
 
     @Throws(YggdrasilException::class)
     fun refresh(
@@ -21,7 +21,7 @@ interface IClient {
         clientToken: String,
         selectedProfile: Profile? = null,
         requireUser: Boolean? = false
-    ): RefreshResponse
+    ): Refresh
 
     @Throws(YggdrasilException::class)
     fun validate(

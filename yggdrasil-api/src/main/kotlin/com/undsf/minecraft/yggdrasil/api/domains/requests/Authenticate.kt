@@ -1,4 +1,4 @@
-package com.undsf.minecraft.yggdrasil.api.domains
+package com.undsf.minecraft.yggdrasil.api.domains.requests
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.annotation.JsonInclude
@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * 登陆请求报文
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-class AuthenticateRequest(
+class Authenticate(
     /**
      * defaults to Minecraft
      */

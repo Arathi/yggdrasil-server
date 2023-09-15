@@ -1,4 +1,4 @@
-package com.undsf.minecraft.yggdrasil.api.domains
+package com.undsf.minecraft.yggdrasil.api.domains.requests
 
 /**
  * 验证Token有效性请求报文

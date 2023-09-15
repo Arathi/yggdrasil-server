@@ -11,9 +11,11 @@ class ClientTests {
         val client = SimpleClient(
             "https://littleskin.cn/api/yggdrasil/authserver"
         )
+        val userName = System.getenv("littleskin.username")
+        val password = System.getenv("littleskin.password")
         val resp = client.authenticate(
-            "username",
-            "password"
+            userName,
+            password,
         )
         logger.info("登陆完成")
     }
